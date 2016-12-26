@@ -57,9 +57,9 @@
 
     self.headerImageView.frame = CGRectMake(0, 0, height, height);
     
-    self.nickNameLabel.frame = CGRectMake(CGRectGetMaxX(self.headerImageView.frame), 0, (self.frame.size.width - height), height / 2.0);
+    self.nickNameLabel.frame = CGRectMake(CGRectGetMaxX(self.headerImageView.frame) + 5, 0, (self.frame.size.width - height), height / 2.0);
     
-    self.contentLabel.frame = CGRectMake(CGRectGetMaxX(self.headerImageView.frame), height / 2, (self.frame.size.width - height), height / 2.0);
+    self.contentLabel.frame = CGRectMake(CGRectGetMaxX(self.headerImageView.frame) + 5, height / 2, (self.frame.size.width - height), height / 2.0);
 }
 
 @end

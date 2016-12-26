@@ -7,22 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-@class XLBarrageView;
+@class XLBarrageView, XLBarrageSprite, XLBarrageModel;
 
 @protocol XLBarrageViewDelegate <NSObject>
 
+@optional
 - (void)barrageViewDidFinishAllBarrages:(XLBarrageView *)barrageView;
+- (void)barrageView:(XLBarrageView *)barrageView didClick:(XLBarrageModel *)model;
+- (NSInteger)numberTrackCountInBarrageView:(XLBarrageView *)barrageView; // 弹幕通道数，默认1
+
+@required
+
+- (XLBarrageSprite *)barrageSpriteInBarrageView:(XLBarrageView *)barrageView;
 
 @end
 
 @interface XLBarrageView : UIView
 
 @property (nonatomic, weak) id <XLBarrageViewDelegate> delegate;
-
-/**
- * trackCount 弹幕通道数，默认1
- */
-- (instancetype)initWithTrackCount:(NSInteger)trackCount;
 
 - (void)insertBarrageWithModel:(id)model;
 

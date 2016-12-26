@@ -23,28 +23,17 @@ static NSTimeInterval duration = 3.f;
     dispatch_semaphore_t _seaphore; // 信号量;
     dispatch_queue_t _queue; // 执行队列
     NSInteger _barrageTaskCount;  // 等待执行动画的任务数
-    NSInteger _trackCount;  // 弹幕通道
 }
 
 #pragma mark - init
 
-- (instancetype)initWithTrackCount:(NSInteger)trackCount {
+- (instancetype)init {
     
     if (self = [super init]) {
         self.backgroundColor = [UIColor clearColor];
         self.clipsToBounds = YES;
         
         _barrages = [NSMutableArray array];
-        
-        for (int i = 0; i < trackCount; i ++) {
-            XLBarrageSprite *barrageSprite = [[XLBarrageSprite alloc] init];
-            barrageSprite.isAnimating = NO;
-            [self addSubview:barrageSprite];
-            [_barrages addObject:barrageSprite];
-        }
-        
-        _seaphore = dispatch_semaphore_create(trackCount);
-        _queue = dispatch_queue_create("xl_semaphore_dispatch_async_queue", DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
 }
@@ -65,8 +54,28 @@ static NSTimeInterval duration = 3.f;
 - (void)insertBarrageWithModel:(id)model {
     
     XLBarrageModel *barrageModel = (XLBarrageModel *)model;
-    
     _barrageTaskCount += 1;
+    
+    NSInteger trackCount = 1;
+    
+    if (!self.barrages.count) {
+        if ([self.delegate respondsToSelector:@selector(numberTrackCountInBarrageView:)]) {
+            trackCount = [self.delegate numberTrackCountInBarrageView:self];
+        }
+
+        // dispatch_semaphore
+        _seaphore = dispatch_semaphore_create(trackCount);
+        _queue = dispatch_queue_create("xl_semaphore_dispatch_async_queue", DISPATCH_QUEUE_CONCURRENT);
+        
+        for (int i = 0; i < trackCount; i ++) {
+            if ([self.delegate respondsToSelector:@selector(barrageSpriteInBarrageView:)]) {
+                XLBarrageSprite *barrageSprite = [self.delegate barrageSpriteInBarrageView:self];
+                barrageSprite.isAnimating = NO;
+                [self addSubview:barrageSprite];
+                [_barrages addObject:barrageSprite];
+            }
+        }
+    }
     
     dispatch_async(_queue, ^{
         
