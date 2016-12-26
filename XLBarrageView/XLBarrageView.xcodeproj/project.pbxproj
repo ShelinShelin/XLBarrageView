@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDDA788C1E10F163005827BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA788B1E10F163005827BE /* main.m */; };
+		FDDA788F1E10F163005827BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA788E1E10F163005827BE /* AppDelegate.m */; };
+		FDDA78921E10F163005827BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78911E10F163005827BE /* ViewController.m */; };
+		FDDA78951E10F163005827BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA78931E10F163005827BE /* Main.storyboard */; };
+		FDDA78971E10F163005827BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA78961E10F163005827BE /* Assets.xcassets */; };
+		FDDA789A1E10F163005827BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA78981E10F163005827BE /* LaunchScreen.storyboard */; };
+		FDDA78A51E10F164005827BE /* XLBarrageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78A41E10F164005827BE /* XLBarrageViewTests.m */; };
+		FDDA78B01E10F164005827BE /* XLBarrageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78AF1E10F164005827BE /* XLBarrageViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDDA78A11E10F164005827BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDA787F1E10F163005827BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDA78861E10F163005827BE;
+			remoteInfo = XLBarrageView;
+		};
+		FDDA78AC1E10F164005827BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDA787F1E10F163005827BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDA78861E10F163005827BE;
+			remoteInfo = XLBarrageView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDDA78871E10F163005827BE /* XLBarrageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLBarrageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA788B1E10F163005827BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDDA788D1E10F163005827BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDDA788E1E10F163005827BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDDA78901E10F163005827BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDDA78911E10F163005827BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDDA78941E10F163005827BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDDA78961E10F163005827BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDDA78991E10F163005827BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDDA789B1E10F163005827BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDA78A01E10F164005827BE /* XLBarrageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLBarrageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA78A41E10F164005827BE /* XLBarrageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLBarrageViewTests.m; sourceTree = "<group>"; };
+		FDDA78A61E10F164005827BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDA78AB1E10F164005827BE /* XLBarrageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLBarrageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA78AF1E10F164005827BE /* XLBarrageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLBarrageViewUITests.m; sourceTree = "<group>"; };
+		FDDA78B11E10F164005827BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDDA78841E10F163005827BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA789D1E10F164005827BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA78A81E10F164005827BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDDA787E1E10F163005827BE = {
+			isa = PBXGroup;
+			children = (
+				FDDA78891E10F163005827BE /* XLBarrageView */,
+				FDDA78A31E10F164005827BE /* XLBarrageViewTests */,
+				FDDA78AE1E10F164005827BE /* XLBarrageViewUITests */,
+				FDDA78881E10F163005827BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDDA78881E10F163005827BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA78871E10F163005827BE /* XLBarrageView.app */,
+				FDDA78A01E10F164005827BE /* XLBarrageViewTests.xctest */,
+				FDDA78AB1E10F164005827BE /* XLBarrageViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDDA78891E10F163005827BE /* XLBarrageView */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA788D1E10F163005827BE /* AppDelegate.h */,
+				FDDA788E1E10F163005827BE /* AppDelegate.m */,
+				FDDA78901E10F163005827BE /* ViewController.h */,
+				FDDA78911E10F163005827BE /* ViewController.m */,
+				FDDA78931E10F163005827BE /* Main.storyboard */,
+				FDDA78961E10F163005827BE /* Assets.xcassets */,
+				FDDA78981E10F163005827BE /* LaunchScreen.storyboard */,
+				FDDA789B1E10F163005827BE /* Info.plist */,
+				FDDA788A1E10F163005827BE /* Supporting Files */,
+			);
+			path = XLBarrageView;
+			sourceTree = "<group>";
+		};
+		FDDA788A1E10F163005827BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA788B1E10F163005827BE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDDA78A31E10F164005827BE /* XLBarrageViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA78A41E10F164005827BE /* XLBarrageViewTests.m */,
+				FDDA78A61E10F164005827BE /* Info.plist */,
+			);
+			path = XLBarrageViewTests;
+			sourceTree = "<group>";
+		};
+		FDDA78AE1E10F164005827BE /* XLBarrageViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA78AF1E10F164005827BE /* XLBarrageViewUITests.m */,
+				FDDA78B11E10F164005827BE /* Info.plist */,
+			);
+			path = XLBarrageViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDDA78861E10F163005827BE /* XLBarrageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDA78B41E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageView" */;
+			buildPhases = (
+				FDDA78831E10F163005827BE /* Sources */,
+				FDDA78841E10F163005827BE /* Frameworks */,
+				FDDA78851E10F163005827BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLBarrageView;
+			productName = XLBarrageView;
+			productReference = FDDA78871E10F163005827BE /* XLBarrageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDDA789F1E10F164005827BE /* XLBarrageViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDA78B71E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageViewTests" */;
+			buildPhases = (
+				FDDA789C1E10F164005827BE /* Sources */,
+				FDDA789D1E10F164005827BE /* Frameworks */,
+				FDDA789E1E10F164005827BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDA78A21E10F164005827BE /* PBXTargetDependency */,
+			);
+			name = XLBarrageViewTests;
+			productName = XLBarrageViewTests;
+			productReference = FDDA78A01E10F164005827BE /* XLBarrageViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDDA78AA1E10F164005827BE /* XLBarrageViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDA78BA1E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageViewUITests" */;
+			buildPhases = (
+				FDDA78A71E10F164005827BE /* Sources */,
+				FDDA78A81E10F164005827BE /* Frameworks */,
+				FDDA78A91E10F164005827BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDA78AD1E10F164005827BE /* PBXTargetDependency */,
+			);
+			name = XLBarrageViewUITests;
+			productName = XLBarrageViewUITests;
+			productReference = FDDA78AB1E10F164005827BE /* XLBarrageViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDDA787F1E10F163005827BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = StarUnion;
+				TargetAttributes = {
+					FDDA78861E10F163005827BE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					FDDA789F1E10F164005827BE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FDDA78861E10F163005827BE;
+					};
+					FDDA78AA1E10F164005827BE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FDDA78861E10F163005827BE;
+					};
+				};
+			};
+			buildConfigurationList = FDDA78821E10F163005827BE /* Build configuration list for PBXProject "XLBarrageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDDA787E1E10F163005827BE;
+			productRefGroup = FDDA78881E10F163005827BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDDA78861E10F163005827BE /* XLBarrageView */,
+				FDDA789F1E10F164005827BE /* XLBarrageViewTests */,
+				FDDA78AA1E10F164005827BE /* XLBarrageViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDDA78851E10F163005827BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA789A1E10F163005827BE /* LaunchScreen.storyboard in Resources */,
+				FDDA78971E10F163005827BE /* Assets.xcassets in Resources */,
+				FDDA78951E10F163005827BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA789E1E10F164005827BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA78A91E10F164005827BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDDA78831E10F163005827BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA78921E10F163005827BE /* ViewController.m in Sources */,
+				FDDA788F1E10F163005827BE /* AppDelegate.m in Sources */,
+				FDDA788C1E10F163005827BE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA789C1E10F164005827BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA78A51E10F164005827BE /* XLBarrageViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA78A71E10F164005827BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA78B01E10F164005827BE /* XLBarrageViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDDA78A21E10F164005827BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDA78861E10F163005827BE /* XLBarrageView */;
+			targetProxy = FDDA78A11E10F164005827BE /* PBXContainerItemProxy */;
+		};
+		FDDA78AD1E10F164005827BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDA78861E10F163005827BE /* XLBarrageView */;
+			targetProxy = FDDA78AC1E10F164005827BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDDA78931E10F163005827BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDA78941E10F163005827BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDDA78981E10F163005827BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDA78991E10F163005827BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDDA78B21E10F164005827BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDDA78B31E10F164005827BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDDA78B51E10F164005827BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XLBarrageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDDA78B61E10F164005827BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XLBarrageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDDA78B81E10F164005827BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XLBarrageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLBarrageView.app/XLBarrageView";
+			};
+			name = Debug;
+		};
+		FDDA78B91E10F164005827BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XLBarrageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLBarrageView.app/XLBarrageView";
+			};
+			name = Release;
+		};
+		FDDA78BB1E10F164005827BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XLBarrageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XLBarrageView;
+			};
+			name = Debug;
+		};
+		FDDA78BC1E10F164005827BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XLBarrageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XLBarrageView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDDA78821E10F163005827BE /* Build configuration list for PBXProject "XLBarrageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA78B21E10F164005827BE /* Debug */,
+				FDDA78B31E10F164005827BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDA78B41E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA78B51E10F164005827BE /* Debug */,
+				FDDA78B61E10F164005827BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDDA78B71E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA78B81E10F164005827BE /* Debug */,
+				FDDA78B91E10F164005827BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDDA78BA1E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA78BB1E10F164005827BE /* Debug */,
+				FDDA78BC1E10F164005827BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDDA787F1E10F163005827BE /* Project object */;
+}
