@@ -29,8 +29,9 @@ static NSTimeInterval duration = 3.f;
 #pragma mark - init
 
 - (instancetype)initWithTrackCount:(NSInteger)trackCount {
+    
     if (self = [super init]) {
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor clearColor];
         self.clipsToBounds = YES;
         
         _barrages = [NSMutableArray array];
@@ -57,7 +58,7 @@ static NSTimeInterval duration = 3.f;
      for (int i = 0; i < self.barrages.count; i ++) {
          
          XLBarrageSprite *barrageSprite = self.barrages[i];
-         barrageSprite.frame = CGRectMake(self.frame.size.width, space + i * (space + barrageHeight), 100, barrageHeight);
+         barrageSprite.frame = CGRectMake(self.frame.size.width, space + i * (space + barrageHeight), 200, barrageHeight);
      }
 }
 
@@ -79,7 +80,7 @@ static NSTimeInterval duration = 3.f;
                 if (!barrageSprite.isAnimating) {
                     barrageSprite.barrageModel = barrageModel;
                     [self startMoveAnimation:barrageSprite animationKey:[self animationKey:i]];
-                    return;
+                    break;
                 }
             }
         });
@@ -114,7 +115,7 @@ static NSTimeInterval duration = 3.f;
         CAAnimation *animation = [barrageSprite.layer animationForKey:[self animationKey:i]];
         if ([animation isEqual:anim]) {
             barrageSprite.isAnimating = YES;
-            return;
+            break;
         }
     }
 }
@@ -139,7 +140,7 @@ static NSTimeInterval duration = 3.f;
         if ([animation isEqual:anim]) {
             barrageSprite.isAnimating = NO;
             [barrageSprite.layer removeAnimationForKey:[self animationKey:i]];
-            return;
+            break;
         }
     }
 }

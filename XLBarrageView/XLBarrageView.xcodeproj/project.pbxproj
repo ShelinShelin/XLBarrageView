@@ -18,6 +18,7 @@
 		FDDA78C01E10F21C005827BE /* XLBarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78BF1E10F21C005827BE /* XLBarrageView.m */; };
 		FDDA78C31E10F22E005827BE /* XLBarrageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78C21E10F22E005827BE /* XLBarrageSprite.m */; };
 		FDDA78C61E10F243005827BE /* XLBarrageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78C51E10F243005827BE /* XLBarrageModel.m */; };
+		FDDA78C91E1106BB005827BE /* UIImage+XLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78C81E1106BB005827BE /* UIImage+XLAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		FDDA78C21E10F22E005827BE /* XLBarrageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarrageSprite.m; sourceTree = "<group>"; };
 		FDDA78C41E10F243005827BE /* XLBarrageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarrageModel.h; sourceTree = "<group>"; };
 		FDDA78C51E10F243005827BE /* XLBarrageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarrageModel.m; sourceTree = "<group>"; };
+		FDDA78C71E1106BB005827BE /* UIImage+XLAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLAdd.h"; sourceTree = "<group>"; };
+		FDDA78C81E1106BB005827BE /* UIImage+XLAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				FDDA788E1E10F163005827BE /* AppDelegate.m */,
 				FDDA78901E10F163005827BE /* ViewController.h */,
 				FDDA78911E10F163005827BE /* ViewController.m */,
+				FDDA78C71E1106BB005827BE /* UIImage+XLAdd.h */,
+				FDDA78C81E1106BB005827BE /* UIImage+XLAdd.m */,
 				FDDA78931E10F163005827BE /* Main.storyboard */,
 				FDDA78961E10F163005827BE /* Assets.xcassets */,
 				FDDA78981E10F163005827BE /* LaunchScreen.storyboard */,
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDA78C91E1106BB005827BE /* UIImage+XLAdd.m in Sources */,
 				FDDA78C61E10F243005827BE /* XLBarrageModel.m in Sources */,
 				FDDA78921E10F163005827BE /* ViewController.m in Sources */,
 				FDDA78C01E10F21C005827BE /* XLBarrageView.m in Sources */,

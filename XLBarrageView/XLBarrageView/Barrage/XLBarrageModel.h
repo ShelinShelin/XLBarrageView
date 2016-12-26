@@ -10,4 +10,8 @@
 
 @interface XLBarrageModel : NSObject
 
+@property (nonatomic, strong) NSString *headerURL;
+@property (nonatomic, strong) NSString *nickName;
+@property (nonatomic, strong) NSString *content;
+
 @end
