@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "XLBarrageView.h"
 
-@interface ViewController ()
+@interface ViewController () <XLBarrageViewDelegate>
+
+@property (nonatomic, strong) XLBarrageView *barrageView;
 
 @end
 
@@ -17,13 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    XLBarrageView *barrageView = [[XLBarrageView alloc] initWithTrackCount:4];
+    barrageView.frame = CGRectMake(0, 200, self.view.frame.size.width, 200);
+    barrageView.delegate = self;
+    [self.view addSubview:barrageView];
+    
+    self.barrageView = barrageView;
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.barrageView insertBarrageWithModel:@""];
 }
 
+- (void)barrageViewDidFinishAllBarrages:(XLBarrageView *)barrageView {
+    NSLog(@"barrageViewDidFinishAllBarrages");
+}
 
 @end

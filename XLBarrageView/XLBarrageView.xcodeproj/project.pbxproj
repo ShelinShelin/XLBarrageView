@@ -15,6 +15,9 @@
 		FDDA789A1E10F163005827BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA78981E10F163005827BE /* LaunchScreen.storyboard */; };
 		FDDA78A51E10F164005827BE /* XLBarrageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78A41E10F164005827BE /* XLBarrageViewTests.m */; };
 		FDDA78B01E10F164005827BE /* XLBarrageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78AF1E10F164005827BE /* XLBarrageViewUITests.m */; };
+		FDDA78C01E10F21C005827BE /* XLBarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78BF1E10F21C005827BE /* XLBarrageView.m */; };
+		FDDA78C31E10F22E005827BE /* XLBarrageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78C21E10F22E005827BE /* XLBarrageSprite.m */; };
+		FDDA78C61E10F243005827BE /* XLBarrageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA78C51E10F243005827BE /* XLBarrageModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FDDA78AB1E10F164005827BE /* XLBarrageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLBarrageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA78AF1E10F164005827BE /* XLBarrageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLBarrageViewUITests.m; sourceTree = "<group>"; };
 		FDDA78B11E10F164005827BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDA78BE1E10F21C005827BE /* XLBarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarrageView.h; sourceTree = "<group>"; };
+		FDDA78BF1E10F21C005827BE /* XLBarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarrageView.m; sourceTree = "<group>"; };
+		FDDA78C11E10F22E005827BE /* XLBarrageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarrageSprite.h; sourceTree = "<group>"; };
+		FDDA78C21E10F22E005827BE /* XLBarrageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarrageSprite.m; sourceTree = "<group>"; };
+		FDDA78C41E10F243005827BE /* XLBarrageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarrageModel.h; sourceTree = "<group>"; };
+		FDDA78C51E10F243005827BE /* XLBarrageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarrageModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		FDDA78891E10F163005827BE /* XLBarrageView */ = {
 			isa = PBXGroup;
 			children = (
+				FDDA78BD1E10F20C005827BE /* Barrage */,
 				FDDA788D1E10F163005827BE /* AppDelegate.h */,
 				FDDA788E1E10F163005827BE /* AppDelegate.m */,
 				FDDA78901E10F163005827BE /* ViewController.h */,
@@ -138,6 +148,19 @@
 				FDDA78B11E10F164005827BE /* Info.plist */,
 			);
 			path = XLBarrageViewUITests;
+			sourceTree = "<group>";
+		};
+		FDDA78BD1E10F20C005827BE /* Barrage */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA78BE1E10F21C005827BE /* XLBarrageView.h */,
+				FDDA78BF1E10F21C005827BE /* XLBarrageView.m */,
+				FDDA78C11E10F22E005827BE /* XLBarrageSprite.h */,
+				FDDA78C21E10F22E005827BE /* XLBarrageSprite.m */,
+				FDDA78C41E10F243005827BE /* XLBarrageModel.h */,
+				FDDA78C51E10F243005827BE /* XLBarrageModel.m */,
+			);
+			path = Barrage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				TargetAttributes = {
 					FDDA78861E10F163005827BE = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6J2XGE456D;
 						ProvisioningStyle = Automatic;
 					};
 					FDDA789F1E10F164005827BE = {
@@ -273,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDA78C61E10F243005827BE /* XLBarrageModel.m in Sources */,
 				FDDA78921E10F163005827BE /* ViewController.m in Sources */,
+				FDDA78C01E10F21C005827BE /* XLBarrageView.m in Sources */,
 				FDDA788F1E10F163005827BE /* AppDelegate.m in Sources */,
+				FDDA78C31E10F22E005827BE /* XLBarrageSprite.m in Sources */,
 				FDDA788C1E10F163005827BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +449,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6J2XGE456D;
 				INFOPLIST_FILE = XLBarrageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +462,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6J2XGE456D;
 				INFOPLIST_FILE = XLBarrageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shelin.XLBarrageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +536,7 @@
 				FDDA78B61E10F164005827BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDDA78B71E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +545,7 @@
 				FDDA78B91E10F164005827BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDDA78BA1E10F164005827BE /* Build configuration list for PBXNativeTarget "XLBarrageViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +554,7 @@
 				FDDA78BC1E10F164005827BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
