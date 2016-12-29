@@ -17,7 +17,6 @@
 - (NSInteger)numberTrackCountInBarrageView:(XLBarrageView *)barrageView; // 弹幕通道数，默认1
 
 @required
-
 - (XLBarrageSprite *)barrageSpriteInBarrageView:(XLBarrageView *)barrageView;
 
 @end

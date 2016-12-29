@@ -12,16 +12,17 @@
 
 static CGFloat const minSpace = 20.f;
 static NSTimeInterval duration = 3.f;
+#define MAX_QUEUE_COUNT 10
 
 @interface XLBarrageView () <CAAnimationDelegate>
 
 @property (nonatomic, strong) NSMutableArray *barrages;
+@property (nonatomic, strong) NSOperationQueue *operationQueue;
 
 @end
 
 @implementation XLBarrageView {
     dispatch_semaphore_t _seaphore; // 信号量;
-    dispatch_queue_t _queue; // 执行队列
     NSInteger _barrageTaskCount;  // 等待执行动画的任务数
 }
 
@@ -65,7 +66,8 @@ static NSTimeInterval duration = 3.f;
 
         // dispatch_semaphore
         _seaphore = dispatch_semaphore_create(trackCount);
-        _queue = dispatch_queue_create("xl_semaphore_dispatch_async_queue", DISPATCH_QUEUE_CONCURRENT);
+        _operationQueue = [[NSOperationQueue alloc] init];
+        _operationQueue.maxConcurrentOperationCount = MAX_QUEUE_COUNT;
         
         for (int i = 0; i < trackCount; i ++) {
             if ([self.delegate respondsToSelector:@selector(barrageSpriteInBarrageView:)]) {
@@ -77,14 +79,13 @@ static NSTimeInterval duration = 3.f;
         }
     }
     
-    dispatch_async(_queue, ^{
-        
+    [self.operationQueue addOperationWithBlock:^{
         // Wait until the semaphore is not zero -1
         dispatch_semaphore_wait(_seaphore, DISPATCH_TIME_FOREVER);
         dispatch_async(dispatch_get_main_queue(), ^{
             
             for (int i = 0; i < self.barrages.count; i ++) {
-
+                
                 XLBarrageSprite *barrageSprite = self.barrages[i];
                 if (!barrageSprite.isAnimating) {
                     barrageSprite.barrageModel = barrageModel;
@@ -93,7 +94,7 @@ static NSTimeInterval duration = 3.f;
                 }
             }
         });
-    });
+    }];
 }
 
 - (NSString *)animationKey:(NSInteger)num {
